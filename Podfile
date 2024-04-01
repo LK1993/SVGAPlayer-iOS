@@ -1,8 +1,7 @@
-platform :ios, '8.0'
+platform :ios, '11.0'
 
 target 'SVGAPlayer' do
 
     pod 'SSZipArchive', '~> 2.1.4'
-    pod 'Protobuf', '~> 3.4'
-
+    pod 'Protobuf', '~> 3.26.1'
 end

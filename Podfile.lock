@@ -1,20 +1,33 @@
 PODS:
-  - Protobuf (3.6.1)
+  - OpenSSL-Universal (3.1.5000)
+  - Protobuf (3.26.1)
   - SSZipArchive (2.1.4)
 
 DEPENDENCIES:
-  - Protobuf (~> 3.4)
+  - OpenSSL-Universal (from `https://github.com/LK1993/OpenSSL.git`)
+  - Protobuf (~> 3.26.1)
   - SSZipArchive (~> 2.1.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Protobuf
     - SSZipArchive
+  trunk:
+    - Protobuf
+
+EXTERNAL SOURCES:
+  OpenSSL-Universal:
+    :git: https://github.com/LK1993/OpenSSL.git
+
+CHECKOUT OPTIONS:
+  OpenSSL-Universal:
+    :commit: 75bb611517e5248f5e9dcbffdedf19590e537e8c
+    :git: https://github.com/LK1993/OpenSSL.git
 
 SPEC CHECKSUMS:
-  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  OpenSSL-Universal: 5ce113ce8e7a6cf0305cc881f50022441dd8ff77
+  Protobuf: a53f5173a603075b3522a5c50be63a67a5f3353a
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: 15ec3c806396baa34a298b2254638f0a6691580c
+PODFILE CHECKSUM: cde9ad8eddd9d513a97a65062e3b44bdd8cac9d1
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.14.3
